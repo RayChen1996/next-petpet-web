@@ -8,16 +8,22 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Banner from "@/components/page/home/Banner";
+import HotBlock from "@/components/page/home/HotBlock";
+import Preserve from "@/components/page/home/Preserve";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className=" container w-2/3 ">
-      <Button variant="default">ADD</Button>
+    <main className="container w-11/12 ">
+      <Banner />
+      <HotBlock />
+      <Preserve />
+      {/* <Button variant="default">ADD</Button>
       <CardItem />
       <CardItem />
       <CardItem />
-      <CardItem />
+      <CardItem /> */}
     </main>
   );
 }
