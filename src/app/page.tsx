@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import {
   Card,
   CardContent,
@@ -11,19 +9,18 @@ import {
 import Banner from "@/components/page/home/Banner";
 import HotBlock from "@/components/page/home/HotBlock";
 import Preserve from "@/components/page/home/Preserve";
-import { Button } from "@/components/ui/button";
-
+import Contact from "@/components/page/home/Contact";
+import ReserveFlow from "@/components/page/home/ReserveFlow";
+import ServiceBanner from "@/components/page/home/ServiceBanner";
 export default function Home() {
   return (
-    <main className="container w-11/12 ">
+    <main className=" m-auto  ">
       <Banner />
       <HotBlock />
       <Preserve />
-      {/* <Button variant="default">ADD</Button>
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem /> */}
+      <ServiceBanner />
+      <ReserveFlow />
+      <Contact />
     </main>
   );
 }

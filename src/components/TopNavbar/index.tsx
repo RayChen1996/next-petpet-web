@@ -30,7 +30,7 @@ export default function TopNavbar() {
   };
 
   return (
-    <header className=" container flex justify-between ">
+    <header className=" container flex justify-between sticky top-0 backdrop-blur-md ">
       <div className="flex items-center">
         <Link href={"/"}>
           <Image alt="logo" src={Logo} />
@@ -51,7 +51,7 @@ export default function TopNavbar() {
               <SheetContent>
                 <ul className="flex flex-col justify-center items-center gap-7 text-brown">
                   <Link href={"/"}>預約服務</Link>
-                  <Link href={"/"}>成為寵物保姆</Link>
+                  <Link href={"/singIn"}>成為寵物保姆</Link>
 
                   <Link href={"/"}>登入</Link>
                 </ul>
@@ -68,7 +68,7 @@ export default function TopNavbar() {
         <Link className=" leading-6 text-brown" href={""}>
           成為寵物保姆
         </Link>
-        <Link className=" leading-6 text-brown" href={""}>
+        <Link className=" leading-6 text-brown" href={"/singIn"}>
           登入
         </Link>
       </ul>
