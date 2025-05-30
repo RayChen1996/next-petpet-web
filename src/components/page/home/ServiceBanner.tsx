@@ -24,10 +24,10 @@ export default function ServiceBanner() {
   ];
   return (
     <div className="relative">
-      <Image src={img3} alt="" className="w-full max-h-[710px] object-cover " />
-      <div className="absolute top-20 left-32 text-white">
-        <div className="lg:text-[40px] ">PETPET目前已有</div>
-        <div className="mt-[100px] flex  gap-[30px]">
+      <Image src={img3} alt="" className="max-h-[710px] w-full object-cover" />
+      <div className="absolute left-32 top-20 text-white">
+        <div className="lg:text-[40px]">PETPET目前已有</div>
+        <div className="mt-[100px] flex gap-[30px]">
           {tilles.map((item, idx) => (
             <div key={idx} className="flex gap-5">
               <div className="h-80 w-1 bg-white" />

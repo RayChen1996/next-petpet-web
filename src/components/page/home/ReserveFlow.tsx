@@ -25,20 +25,20 @@ export default function ReserveFlow() {
     },
   ];
   return (
-    <section className=" m-auto lg:w-11/12 my-20">
+    <section className="m-auto my-20 lg:w-11/12">
       <div className="mb-[20px]">
         <PageTitle title="預約流程" subTitle="輕鬆三步驟，立即獲取最佳服務！" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] lg:gap-[30px]">
+      <div className="grid grid-cols-1 gap-[6px] md:grid-cols-3 lg:gap-[30px]">
         {flowData.map((item, idx) => {
           return (
             <div key={idx} className="">
-              <div className=" text-brown text-xl font-bold">{item.title}</div>
-              <figure className="relative  h-80">
+              <div className="text-xl font-bold text-brown">{item.title}</div>
+              <figure className="relative h-80">
                 <Image
                   src={item.src}
-                  className=" aspect-[4/3] object-cover "
+                  className="aspect-[4/3] object-cover"
                   alt=""
                   fill
                 />

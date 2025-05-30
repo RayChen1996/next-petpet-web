@@ -13,15 +13,15 @@ export default function Banner() {
   return (
     <div className="lg:flex lg:gap-[30px]">
       <Image alt="" src={indxPng} />
-      <div className="mt-6 lg:m-auto flex-1 pr-20">
-        <h1 className=" text-brown font-bold lg:text-[40px]">
+      <div className="mt-6 flex-1 pr-20 lg:m-auto">
+        <h1 className="font-bold text-brown lg:text-[40px]">
           寵物服務，盡在 PETPET
         </h1>
-        <p className="  text-brown text-2xl font-bold mt-4 mb-12">
+        <p className="mb-12 mt-4 text-2xl font-bold text-brown">
           當您的毛孩有需要時， 幫您找到最合適的服務者！
         </p>
-        <div className="lg:flex text-[20px]">
-          <div className="mt-5 lg:mt-0 mb-3 lg:w-[120px]">
+        <div className="text-[20px] lg:flex">
+          <div className="mb-3 mt-5 lg:mt-0 lg:w-[120px]">
             <Select>
               <SelectTrigger>
                 <SelectValue placeholder="品種" />
@@ -42,7 +42,7 @@ export default function Banner() {
             </Select>
           </div>
 
-          <div className="mb-4 lg:flex-1 ">
+          <div className="mb-4 lg:flex-1">
             <Select>
               <SelectTrigger>
                 <SelectValue placeholder="地區" />
@@ -55,7 +55,7 @@ export default function Banner() {
 
           <Button
             type="button"
-            className="bg-orange-dark rounded-none lg:w-[95px]"
+            className="rounded-none bg-orange-dark lg:w-[95px]"
           >
             搜尋
           </Button>

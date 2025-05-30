@@ -45,16 +45,16 @@ export default function HotBlock() {
     },
   ];
   return (
-    <div className=" lg:px-[95px] my-20">
+    <div className="my-20 lg:px-[95px]">
       <PageTitle
         title="本月熱門保姆"
         subTitle="即時瞭解您的需求，安排最適合毛孩的寵物保姆！"
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-[30px]">
+      <div className="grid grid-cols-1 gap-x-[30px] md:grid-cols-3">
         {cardsData.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-lg overflow-hidden shadow-md"
+            className="overflow-hidden rounded-lg bg-white shadow-md"
           >
             <div className="relative h-40">
               <Image
@@ -63,7 +63,7 @@ export default function HotBlock() {
                 layout="fill"
                 objectFit="cover"
               />
-              <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
                 <Image
                   src={item.src}
                   alt={item.name}
@@ -73,10 +73,10 @@ export default function HotBlock() {
                 />
               </div>
             </div>
-            <div className="pt-12 px-4 pb-4 text-center">
-              <h3 className="font-bold text-xl mb-2">{item.name}</h3>
-              <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-              <button className="text-red-700   py-2 px-4 rounded-full mb-4 hover:bg-red-800 transition duration-300">
+            <div className="px-4 pb-4 pt-12 text-center">
+              <h3 className="mb-2 text-xl font-bold">{item.name}</h3>
+              <p className="mb-4 text-sm text-gray-600">{item.description}</p>
+              <button className="mb-4 rounded-full px-4 py-2 text-red-700 transition duration-300 hover:bg-red-800">
                 預約
               </button>
               <div className="flex justify-between text-sm">
